@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="body">
+    <main>
+        <section class="location-details">
+            <div class="container">
+                <div class="row">
+                    <div id="date-time">
+                        <h2>7:10 <span>AM</span></h2>
+                        <p class="fs-1-5">Friday, January 26, 2023</p>
+                    </div>
+                    <div id="search-location">
+                        <form class="d-flex">
+                            <input type="text" name="location" id="location" class="fs-1-5" placeholder="Search location...">
+                            <div id="search-icon">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="location" class="d-flex">
+                        <h2 id="city"></h2>
+                        <p id="country" class="fs-1-5"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="weather-forecast p-5">
+            <div class="container">
+                <div class="row">
+                    <article class="temperature">
+                        <div class="weather-icon">
+                            <img id="weather-img" src="" alt="Sun icon">
+                            <p id="weather-description"></p>
+                        </div>
+                        <div class="weather-temperature">
+                            <h2 id="weather-degree" class="mt-05"></h2>
+                            <p class="mt-05">Feels like <span id="weather-feel"></span></p>
+                            <h3 class="mt-05"><span id="temp-max"></span> / <span id="temp-min"></span></h3>
+                        </div>
+                    </article>
+                    <article class="sunrise-sunset d-flex gap-2">
+                        <div class="sunrise">
+                            <img src="assets/images/icons/sunrise.png" alt="Sunrise icon">
+                            <p>Sunrise</p>
+                            <h3 id="sunrise-time"></h3>
+                        </div>
+                        <div class="sunset">
+                            <img src="assets/images/icons/sunset.png" alt="Sunset icon">
+                            <p>Sunset</p>
+                            <h3 id="sunset-time"></h3>
+                        </div>
+                    </article>
+                    <article class="atmospheric-conditions d-flex">
+                        <div class="humidity">
+                            <img src="assets/images/icons/humidity.png" alt="Humidity icon">
+                            <p>Humidity</p>
+                            <h3 id="humidity-level"></h3>
+                        </div>
+                        <div class="pressure">
+                            <img src="assets/images/icons/pressure.png" alt="Pressure icon">
+                            <p>Pressure</p>
+                            <h3 id="pressure-level"></h3>
+                        </div>
+                        <div class="visibility">
+                            <img src="assets/images/icons/low-visibility.png" alt="Visibility icon">
+                            <p>Visibility</p>
+                            <h3 id="visibility-level"></h3>
+                        </div>
+                    </article>
+                    <article class="wind-conditions d-flex">
+                        <div class="direction">
+                            <img src="assets/images/icons/wind-direction.png" alt="Wind direction icon">
+                            <p>Wind direction</p>
+                            <h3 id="wind-direction"></h3>
+                        </div>
+                        <div class="speed">
+                            <img src="assets/images/icons/anemometer.png" alt="Wind speed icon">
+                            <p>Wind speed</p>
+                            <h3 id="wind-speed"></h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
